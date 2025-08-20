@@ -1,0 +1,27 @@
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background: @glass-bg;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    border: @border;
+    
+    &:hover {
+        background: @primary-gradient;
+        transform: translateY(-5px) rotate(5deg);
+        box-shadow: 0 5px 15px rgba(142, 84, 233, 0.4);
+    }
+}

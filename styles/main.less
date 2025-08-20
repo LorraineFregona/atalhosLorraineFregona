@@ -1,0 +1,47 @@
+@primary-gradient: linear-gradient(90deg, #4776E6, #8E54E9);
+@secondary-gradient: linear-gradient(90deg, #ff7e5f, #feb47b);
+@bg-gradient: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+@text-color: #fff;
+@text-secondary: #d6d6d6;
+@glass-bg: rgba(255, 255, 255, 0.1);
+@shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+@border: 1px solid rgba(255, 255, 255, 0.1);
+
+.glass-effect() {
+    background: @glass-bg;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: @shadow;
+    border: @border;
+}
+
+.hover-effect() {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(142, 84, 233, 0.6);
+}
+
+@import "components/layout";
+@import "components/buttons";
+@import "components/social";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: @bg-gradient;
+    color: @text-color;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+h1 {
+        color: @text-color;
+}
